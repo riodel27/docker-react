@@ -1,0 +1,7 @@
+#Filename: docker-compose.yml
+version: '3.5'
+services:
+  web:
+    volumes:
+      - .:/app
+      - /app/node_modules

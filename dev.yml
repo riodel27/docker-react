@@ -1,0 +1,12 @@
+#Filename: dev.yml
+version: '3.5'
+services:
+  web:
+    command: npm start
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
